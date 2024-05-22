@@ -2,9 +2,9 @@
     "name": "emanoel/jwtlearn",
     "autoload": {
         "psr-4": {
+            "App\\": "app/",
             "App\\Http\\Controllers\\": "app/http/controllers",
-            "App\\Http\\Middlewares\\": "app/http/middlewares",
-            "App\\Models\\": "app/models",
+            "Framework\\": "framework/",
             "Config\\": "config"
         }
     },
@@ -16,11 +16,12 @@
     ],
     "require": {
         "bramus/router": "^1.6",
-        "coffeecode/router": "^2.0",
         "firebase/php-jwt": "^6.10",
         "coffeecode/datalayer": "^2.0",
         "robmorgan/phinx": "^0.16.0",
         "vlucas/phpdotenv": "^5.6",
-        "php-di/php-di": "^7.0"
+        "php-di/php-di": "^7.0",
+        "psr/http-message": "^2.0",
+        "pecee/simple-router": "^5.4"
     }
 }

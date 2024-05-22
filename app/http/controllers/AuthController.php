@@ -4,12 +4,20 @@ namespace App\Http\Controllers;
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
+use Framework\Http\Controller;
+use Framework\Http\Request;
+use Psr\Http\Message\RequestInterface;
 
-class AuthController 
+class AuthController
 {
+
+  public function __construct(private RequestInterface $request)
+  {
+  }
+
   public function login()
   {
-    
+   var_dump($this->request->getBody());
   }
   
   public function test()
